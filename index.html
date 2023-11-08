@@ -1,52 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    rel="stylesheet"
+  />
+
+
+    <title>Portfolio</title>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right turn"></div>
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right"></div>
+      <div class="book">
+        <!-- profile page-->
+        <div class="book-page page-left">
+          <div class="profile-page">
+            <img src="./image/profile1.jpg" alt="" />
+            <h1>Mohammad Movahed</h1>
+            <h3>Web Developer</h3>
 
-        <div class="book">
-            <!-- Profile page -->
-            <div class="book-page page-left">
-                <div class="profile-page">
-                    <img src="photo.jpg" alt="">
-                    <h1>Mohammad Movahed</h1>
-                    <h3>Backend Developer</h3>
-                    <div class="social-media">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram' ></i></a>
-                        <a href="#"><i class='bx bxl-telegram' ></i></a>
-                        <a href="#"><i class='bx bxl-gmail' ></i></a>
-                        
-                    </div>
-                    <p>Hi, I'm Mohammad Mahdi Movahed, a web developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure non reprehenderit nesciunt ducimus voluptas facere culpa, ea pariatur a sint, autem modi doloremque deserunt assumenda fuga harum enim nihil!</p>
-    
-                    <div class="btn-box">
-                        <a href="#" class="btn">Download CV</a>
-                        <a href="#" class="btn contact-me">Contact Me</a>
-                    </div>
-                </div>
-                
+            <div class="social-media">
+              <a href="https://www.instagram.com/mmahdi.m_/"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mohamad-mahdi-movahed/"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://t.me/mmahdi_m"><i class="bx bxl-telegram"></i></a>
+              <a href="https://github.com/mmmovahed"><i class="bx bxl-github"></i></a>
             </div>
-            <!-- page1 and page 2 -->
-            <div class="book-page page-right" id="turn-1">
-                <!-- page 1 work experience -->
+            <p>
+              I'm Mohammad Mahdi Movahed, Backend developer. studing software engineering at Shamsipour technical and vocational college. Intrested in network and linux machines.
 
-
-                <!-- page 2 education -->
-
+            </p>
+            <div class="btn-box">
+              <a href="#" class="btn">Download CV</a>
+              <a href="#" class="btn contact-me">Contact Me</a>
             </div>
+          </div>
         </div>
+
+        <!-- page 1 & 2 -->
+        <div class="book-page page-right turn" id="turn-1">
+          <!-- page 1 (work experience) -->
+          <div class="page-front">
+            <h1 class="title">Work Experience</h1>
+
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i> 2018 - 2020</span
+                >
+                <h3>Web Designer - Freelance</h3>
+                <p>
+                  Design website with wordpress for three organizations. 
+                </p>
+              </div>
+
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i> 2020 - 2021</span
+                >
+                <h3>Support web - Private institute</h3>
+                <p>
+                  I was support man of website of a private institute and handled all problems.
+                </p>
+              </div>
+
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i> 2023 - Now</span
+                >
+                <h3>IT man - Fundalborz</h3>
+                <p>
+                  Develop websites and handle IT problems of this organisation.
+                </p>
+              </div>
+            </div>
+
+            <span class="number-page">1</span>
+            <!-- next button -->
+
+            <span class="nextprev-btn" data-page="turn-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <!-- page 2 (education) -->
+          <div class="page-back">
+            <h1 class="title">Education</h1>
+
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i> 2016 - 2020</span
+                >
+                <h3>Network and developing - Farabi High school</h3>
+              </div>
+
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i> 2020 - Now</span
+                >
+                <h3>Shamsipour technical and vocational college - University </h3>
+               
+              </div>
+
+          </div>
+            <span class="number-page">2</span>
+
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-1">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- page 3 & 4 -->
+        <div class="book-page page-right turn" id="turn-2">
+          <!-- page 3 (my services) -->
+          <div class="page-front">
+            <h1 class="title">My Services</h1>
+
+            <div class="services-box">
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Developing</h3>
+                <p>PHP - Linux - Nginx - Appache</p>
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+
+              <div class="services-content">
+                <i class="bx bxs-paint"></i>
+                <h3>DataBase adminstrator</h3>
+                <p>MySQL - SQL Server - MongoDB</p>
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+
+              <div class="services-content">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Security</h3>
+                <p>Pentest and threat hunter of Web</p>
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+
+              <div class="services-content">
+                <i class="bx bx-search"></i>
+                <h3>Network</h3>
+                <p>Designing and support of networks</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <span class="number-page">3</span>
+            <!-- next button -->
+
+            <span class="nextprev-btn" data-page="turn-2">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <!-- page 4 (my skills) -->
+          <div class="page-back">
+            <h1 class="title">My Skills</h1>
+
+            <div class="skills-box">
+              <div class="skills-content">
+                <h3>Front-End</h3>
+                <div class="content">
+                  <span><i class="bx bxl-html5"></i>HTML</span>
+                  <span><i class="bx bxl-css3"></i>CSS</span>
+                  <span><i class="bx bxl-javascript"></i>JS</span>
+                  <span><i class="bx bxl-php"></i>PHP</span>
+                  <span><i class="bx bx-data"></i>MySQL</span>
+                  <span><i class="fa-brands fa-laravel"></i>Laravel</span>
+                  <span><i class="fa-brands fa-linux"></i>Linux</span>
+                  <span><i class="fa-solid fa-server"></i>Network</span>
+                  <span><i class="fa-solid fa-shield-halved"></i>Pentest</span>
+                  <span><i class="fa-brands fa-wordpress-simple"></i>WordPress</span>
+                </div>
+              </div>
+            </div>
+            <span class="number-page">4</span>
+
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-2">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Page 5 & 6  -->
+        <div class="book-page page-right turn" id="turn-3">
+          <!-- page 5 (Latest project or my portfolio) -->
+          <div class="page-front">
+            <h1 class="title">Latest Project</h1>
+
+            <div class="portfolio-box">
+              <div class="img-box">
+                <img src="./image/portfolio.jpg" alt="" width="300" />
+              </div>
+              <div class="info-box">
+                <div class="info-title">
+                  <h3>Project Name</h3>
+                  <a href="#" class=""
+                    >Live Preview <i class="bx bx-link-external"></i
+                  ></a>
+                </div>
+                <p>Tech Used:</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                  quis?
+                </p>
+              </div>
+              <div class="btn-box">
+                <a href="#" class="btn">Source Code</a>
+                <a href="#" class="btn">More Projects</a>
+              </div>
+            </div>
+            <span class="number-page">5</span>
+            <!-- next button -->
+
+            <span class="nextprev-btn" data-page="turn-3">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+
+          <!-- page 6 (contact me) -->
+          <div class="page-back">
+            <h1 class="title">Contact Me!</h1>
+            <div class="contact-box">
+              <h3><i class="fa-solid fa-envelope"></i> work.mohamad.mahdi@gmail.com</h2>
+            </div>
+            <div class="contact-box">
+              <h3><i class="fa-brands fa-telegram"></i> mmahdi_m</h2>
+            </div>
+            <span class="number-page">6</span>
+
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-3">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+            <a href="#" class="back-profile">
+              <p>Profile</p>
+              <i class="bx bxs-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
